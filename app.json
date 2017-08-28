@@ -18,11 +18,19 @@
       "required": false
     },
     "SLACK_RESTRICT": {
-      "description": "If it's a restricted account or not (default it's false)",
+      "description": "If it's a restricted (guest) account enter 'true' or not (leave empty for full memeber)",
       "required": false
     },
     "BADGE_HEIGHT": {
       "description": "Badge heigh for the svg (eave blank for a normal, with equal the badge width)",
+      "required": false
+    },
+    "RETRY_INTERVAL": {
+      "description": "Retry data lookup interval (Slack limits this for API calls) defaults to 15000 (15 seconds)",
+      "required": false
+    },
+    "DEBUG": {
+      "description": "Output more data set to 'true' to turn on, leave blank to turn off",
       "required": false
     }
   }
